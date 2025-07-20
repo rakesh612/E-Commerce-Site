@@ -1,0 +1,12 @@
+# Root-level ignores
+node_modules/
+.env
+.vscode/
+*.log
+
+# Frontend-specific ignores
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/.vite
+/frontend/.DS_Store
