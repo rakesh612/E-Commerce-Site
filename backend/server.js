@@ -33,13 +33,13 @@ app.use("/api/coupons", couponRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/analytics", analyticsRoutes);
 
-if (process.env.NODE_ENV === "production") {
+
 	app.use(express.static(path.join(__dirname, "/frontend/dist"))); //from the root folder ,go to frontend and and use dist folder
 // Serve the static files from the React app. whenever user visits otherthan the above routes, serve the index.html file
 	app.get("/{*any}", (req, res) => {
 		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 	});
-}
+
 // Let’s say you deploy this to Render:
 // Someone goes to https://your-app.onrender.com/products
 // Express checks the route:
