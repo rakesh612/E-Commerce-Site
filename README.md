@@ -1,6 +1,6 @@
 <h1 align="center">E-Commerce Store 🛒</h1>
 
-![Uploading Screenshot 2025-06-02 113555.png…]()
+![image alt](https://github.com/rakesh612/E-Commerce-Site/blob/main/Screenshot%202025-10-10%20135918.png?raw=true)
 
 
 -   🚀 Project Setup
