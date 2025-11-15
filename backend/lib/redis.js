@@ -1,14 +1,9 @@
-import Redis from "ioredis";
-import dotenv from "dotenv";
+
+import { Redis } from '@upstash/redis'
+export const redis = new Redis({
+  url: 'https://premium-pug-5942.upstash.io',
+  token: 'ARc2AAImcDJhMGUzODQ3YjJiZTM0Nzk2OTJkMWYwY2YwYzQxMGU0N3AyNTk0Mg',
+})
 
 
-dotenv.config();
-
-export const redis = new Redis(process.env.UPSTASH_REDIS_URL, {
-  tls: {
-    rejectUnauthorized: false, // 👈 must be inside tls
-      maxRetriesPerRequest: 5,    // retry few times before failing
-  reconnectOnError: () => true
-  },
-});
 
